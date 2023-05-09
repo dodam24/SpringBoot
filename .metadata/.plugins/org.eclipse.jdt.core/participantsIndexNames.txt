@@ -1,5 +1,0 @@
-INDEX VERSION 1.132
-D:\Spring Boot\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\516036273.index
-\Chapter02_MySQL\src\main\java
-D:\Spring Boot\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2309589140.index
-\Chapter02_MySQL\src\main\java

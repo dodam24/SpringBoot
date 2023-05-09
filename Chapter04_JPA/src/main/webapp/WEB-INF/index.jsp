@@ -8,9 +8,11 @@
 </head>
 <body>
 <h3>*** 메인화면 ***</h3>
-<h2><a href="/person/writeForm">등록</a></h2>
-<h2><a href="/person/list">목록</a></h2>
+<h4>
+	<a href="/user/writeForm">등록</a><br/>
+	<a href="/user/list">목록</a><br/>
+	<a href="">수정</a><br/>
+	<a href="">삭제</a><br/>
+</h4>
 </body>
 </html>
-
-

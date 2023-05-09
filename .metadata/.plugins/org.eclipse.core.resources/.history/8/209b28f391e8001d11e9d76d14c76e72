@@ -1,9 +1,0 @@
-package com.example.controller;
-
-public class HelloController {
-	
-	public HelloController() {
-		// TODO Auto-generated constructor stub
-		System.out.println("HelloController 기본 생성자");
-	}
-}
