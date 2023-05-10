@@ -1,0 +1,7 @@
+$(function(){
+	$('#writeBtn').click(function(){
+		$.ajax({
+			var formData = new FormData();
+		});
+	});
+});

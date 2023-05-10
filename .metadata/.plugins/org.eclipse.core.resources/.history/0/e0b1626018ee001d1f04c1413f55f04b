@@ -1,0 +1,22 @@
+//목록
+$(function(){
+	$.ajax({
+		type: 'post',
+		url: '/user/getUserList',
+		data: 'json',
+		success: function(data){
+			console.log(JSON.stringify(data));
+			
+			$.each(data, function(index, item){
+				var result = `<tr>` +
+							 `<td></td>` +
+							 `<td></td>` +
+							 `<td></td>` +
+							 `</tr>`;				
+			});
+		},
+		error: function(err){
+			console.log(err);
+		}
+	});
+});

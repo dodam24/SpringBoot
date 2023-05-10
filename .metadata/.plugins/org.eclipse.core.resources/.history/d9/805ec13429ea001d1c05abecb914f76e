@@ -1,0 +1,22 @@
+package person.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+@Controller
+public class PersonController {
+
+	@GetMapping("/")
+	public String index() {
+		return "index";
+	}
+	
+	@GetMapping(value="/person/writeForm")
+	public String writeForm() {
+		return "/person/writeForm";
+	}
+	
+	@PostMapping("person/write")
+	
+}

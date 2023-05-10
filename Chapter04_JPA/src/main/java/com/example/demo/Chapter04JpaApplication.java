@@ -30,5 +30,5 @@ public class Chapter04JpaApplication {
 Optional 클래스란?
 - Optional이란 'null일 수도 있는 객체'를 감싸는 일종의 Wrapper 클래스이다.
 
-
 */
+

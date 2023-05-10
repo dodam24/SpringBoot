@@ -1,0 +1,4 @@
+//등록
+$('#writeBtn').click(function(){
+	
+});

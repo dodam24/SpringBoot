@@ -6,6 +6,7 @@ $('#writeBtn').click(function(){
 		data: $('#writeForm').serialize(), //문자열 'name=홍길동&id=hong&pwd=111'로 보낸다 (controller로 보냄)
 		success: function(){
 			alert("등록 완료");
+			location.href='';
 		},
 		error: function(err){
 			console.log(err);
@@ -26,10 +27,11 @@ $('#id').focusout(function(){
 			url: '/user/isExistId',
 			data: 'id=' + $('#id').val(),
 			dataType: 'text',
-			succeess: function(data){
+			success: function(data){
+				console.log(data)
 				if(data == 'exist'){
-					$('idDiv').text('사용 불가능');
-					$('idDiv').css('color', 'red');
+					$('#idDiv').text('사용 불가능');
+					$('#idDiv').css('color', 'red');
 				}else if(data == 'non_exist'){
 					$('#idDiv').text('사용 가능');
 					$('#idDiv').css('color', 'blue');

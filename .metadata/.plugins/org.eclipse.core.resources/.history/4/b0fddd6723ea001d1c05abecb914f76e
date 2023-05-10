@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		<table border="1" cellpadding="5" cellspacing="0">
+			<tr>
+				<th>이름</th>
+				<td><input type="text" name="name" id="name"></td>
+			</tr>
+			<tr>
+				<th>나이</th>
+				<td><input type="text" name="age" id="age"></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<img id="showImg" width="70" height="70">
+					<img id="camera" src="/img/camera.png" width=30" height="30" alt="카메라">
+					<input type="file" name="img" id="img" style="visibility: hidden;">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="button" value="등록">
+					<input type="reset" value="취소">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

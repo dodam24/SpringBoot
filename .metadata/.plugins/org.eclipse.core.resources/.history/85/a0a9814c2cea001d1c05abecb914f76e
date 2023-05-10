@@ -1,0 +1,5 @@
+package person.dao;
+
+public class PersonDAOMybatis {
+
+}

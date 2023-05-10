@@ -1,0 +1,22 @@
+package com.example.demo;
+
+import java.security.Timestamp;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Table;
+
+@Table(name="board")
+public class BoardDTO {
+	
+	@Column(name="id")
+	private String id;
+	
+	
+	
+	
+	private String name;
+	private String subject;
+	private String content;
+	private Timestamp logtime;
+
+}

@@ -1,0 +1,5 @@
+package person.service;
+
+public interface PersonService {
+
+}

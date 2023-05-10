@@ -1,0 +1,14 @@
+//목록
+$(function(){
+	$.ajax({
+		type: 'post',
+		url: '/user/getUserList',
+		data: $().serializ(),
+		success: function(){
+			
+		},
+		error: function(err){
+			console.log(err);
+		}
+	});
+});

@@ -1,0 +1,17 @@
+package person.service;
+
+import org.springframework.stereotype.Service;
+
+import person.bean.PersonDTO;
+
+@Service
+public class PersonServiceImpl implements PersonService {
+	private PersonDAO personDAO;
+	
+	@Override
+	public void write(PersonDTO personDTO) {
+		
+		
+	}
+
+}
