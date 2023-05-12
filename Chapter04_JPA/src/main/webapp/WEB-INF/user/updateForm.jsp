@@ -23,8 +23,7 @@
 			<tr>
 				<th>아이디</th>
 				<td>
-					<input type="text" name="id" id="id">
-					<div id="idDiv"></div>
+					<input type="text" name="id" id="id" readonly>
 				</td>
 			</tr>
 			<tr>
@@ -34,14 +33,16 @@
 			<tr>
 				<td colspan="2" align="center">
 					<input type="button" value="수정" id="updateBtn">
-					<input type="reset" value="취소">
+					<input type="reset" value="취소" id="resetBtn">
 				</td>
 			</tr>
 		</table>
-</form>
+	</form>
 </div>
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script type="text/javascript" src="/js/update.js"></script>
 </body>
 </html>
+
+

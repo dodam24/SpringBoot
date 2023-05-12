@@ -17,6 +17,10 @@ public interface UserService {
 	public List<UserDTO> search(Map<String, String> map);
 
 	public Optional<UserDTO> getUser(String id);
+
+	public void update(UserDTO userDTO);
+
+	public void delete(String id);
 	
 	
 
