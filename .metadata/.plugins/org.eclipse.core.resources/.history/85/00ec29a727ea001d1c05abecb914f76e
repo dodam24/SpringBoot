@@ -1,5 +1,0 @@
-$(function(){
-	$('#writeBtn').click(function(){
-		alert("adfsfdsf");
-	});
-});

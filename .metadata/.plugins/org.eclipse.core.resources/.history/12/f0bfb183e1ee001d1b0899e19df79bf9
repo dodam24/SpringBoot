@@ -1,5 +1,0 @@
-//수정
-$(function(){
-	$('#updateDiv').hide();
-	
-});

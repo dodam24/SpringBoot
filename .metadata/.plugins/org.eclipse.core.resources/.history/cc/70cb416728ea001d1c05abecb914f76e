@@ -1,8 +1,0 @@
-$(function(){
-	$('#writeBtn').click(function(){
-			var formData = new FormData($('#writeForm')[0]);
-			
-		$.ajax({
-		});
-	});
-});

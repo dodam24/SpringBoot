@@ -1,8 +1,0 @@
-package com.example.demo;
-
-public class BoardController {
-
-	public String write() {
-		return "게시판 등록 성공";
-	}
-}

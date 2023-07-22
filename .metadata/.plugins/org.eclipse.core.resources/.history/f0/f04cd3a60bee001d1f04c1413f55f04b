@@ -1,8 +1,0 @@
-//등록
-$('#writeBtn').click(function(){
-	$.ajax({
-		type: 'post',
-		url: '/user/write',
-		data: 
-	});
-});

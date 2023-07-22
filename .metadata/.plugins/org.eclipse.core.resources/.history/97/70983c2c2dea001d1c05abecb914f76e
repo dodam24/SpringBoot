@@ -1,5 +1,0 @@
-package person.dao;
-
-public interface PersonDAO {
-
-}
