@@ -1,0 +1,15 @@
+package com.example.demo;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class BoardServiceImpl implements BoardService {
+	priate BoardDAO boardDAO;
+	
+	@Override
+	public void write() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

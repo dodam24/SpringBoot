@@ -1,0 +1,22 @@
+$(function(){
+	$.ajax({
+		type: 'post',
+		url: '/person/getPersonList',
+		success: function(data){
+			console.log(JSON.stringify(data));
+			
+			$.each(data, function(index, item){});
+			var html = `<tr>` +
+						`<td align="center">`+ data[0].photo + `</td>` +
+						`<td align="center">`+ data[0].name + `</td>` +
+						`<td align="center">`+ data[0].age + `</td>` +
+						`</tr>`;
+						
+			$('#listTable').append(html);
+		},
+		error: function(err){
+			console.log(err);
+		}
+		
+	});//ajax()
+});

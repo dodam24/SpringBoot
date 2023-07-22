@@ -1,0 +1,16 @@
+package person.service;
+
+import org.springframework.stereotype.Service;
+
+import person.bean.PersonDTO;
+
+@Service
+public class PersonServiceImpl implements PersonService {
+
+	@Override
+	public void write(PersonDTO personDTO) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,32 @@
+//수정
+$('#searchIdBtn').click(function(){
+	$('#resultDiv').empty()
+	
+	if($('#searchId').val() == '') {
+		$('#resultDiv').text('수정할 아이디가 없습니다.');
+		$('#searchId').focus();	
+	}else{
+		$.ajax({
+			type: 'post',
+			url: '/user/',
+			data: $('#searchForm').serialize(),
+			dataType: 'json',
+			success: function(data){
+				console.log(JSON.stringify(data));
+				
+				$.each(data, function(index, item){
+				var result = `<tr>` +
+							 `<td align="center">${item.name}</td>` +
+							 `<td align="center">${item.id}</td>` +
+							 `<td align="center">${item.pwd}</td>` +
+							 `</tr>`;
+				
+				$('#userListTable').append(result);
+				});
+			},
+			error: function(err){
+				console.log(err);
+			}
+		});
+	}
+});

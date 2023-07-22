@@ -1,0 +1,9 @@
+package person.dao;
+
+import person.bean.PersonDTO;
+
+public interface PersonDAO {
+
+	void write(PersonDTO personDTO);
+
+}

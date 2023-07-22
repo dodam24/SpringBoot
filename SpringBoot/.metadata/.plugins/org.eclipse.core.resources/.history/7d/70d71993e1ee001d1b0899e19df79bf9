@@ -1,0 +1,15 @@
+//수정
+$(function(){
+	$('#updateDiv').hide();
+	
+	$('#searchIdBtn').click(function(){
+		$('#resultDiv').empty();
+		
+		$.ajax({
+			type: 'post',
+			url: '/user/getUser',
+			data: 'id=' + $('#searchId').val(),
+		});
+	});
+	
+});

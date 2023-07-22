@@ -1,0 +1,9 @@
+package person.service;
+
+import person.bean.PersonDTO;
+
+public interface PersonService {
+
+	void write(PersonDTO personDTO);
+
+}

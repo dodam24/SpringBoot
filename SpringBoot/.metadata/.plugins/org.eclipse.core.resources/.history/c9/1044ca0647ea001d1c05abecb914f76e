@@ -1,0 +1,21 @@
+$(function(){
+	$.ajax({
+		type: 'post',
+		url: '/person/getPersonList',
+		success: function(data){
+			console.log(JSON.stringify(data));
+			
+			var html = `<tr>` +
+						`<td>`+ data[0].photo + `</td>` +
+						`<td>`+ data[0].name + `</td>` +
+						`<td>`+ data[0].age + `</td>` +
+						`</tr>`;
+						
+			$('#listTable').append(html);
+		},
+		error: function(err){
+			console.log(err);
+		}
+		
+	});//ajax()
+});

@@ -1,0 +1,17 @@
+package user.service;
+
+import org.springframework.stereotype.Service;
+
+import user.bean.UserDTO;
+
+@Service
+public class UserServiceImpl implements UserService {
+	private UserDAO userDAO;
+	
+	@Override
+	public void write(UserDTO userDTO) {
+		
+		
+	}
+	
+}
